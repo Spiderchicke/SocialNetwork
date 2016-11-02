@@ -49,7 +49,7 @@ public class LoginServlet extends HttpServlet {
         if (errorMsg != null) {
             RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.html");
             PrintWriter out = response.getWriter();
-            out.println("<font color=red>" + errorMsg + "</font>");
+            out.println("<br><br><p align='center'><font color = fffaf0 size=3>" + errorMsg + "</font></p>");
             rd.include(request, response);
         } else {
             Connection con = (Connection) getServletContext().getAttribute("DBConnection");
@@ -71,7 +71,7 @@ public class LoginServlet extends HttpServlet {
                     RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.html");
                     PrintWriter out = response.getWriter();
                     logger.error("User not found with email=" + email);
-                    out.println("<p align='center'><font color = fffaf0 size=3>No user found with given email id, please register first.</font>");
+                    out.println("<br><br><p align='center'><font color = fffaf0 size=3>No user found with given email id, please Sign Up first.</font>");
                     rd.include(request, response);
                 }
             } catch (SQLException e) {
