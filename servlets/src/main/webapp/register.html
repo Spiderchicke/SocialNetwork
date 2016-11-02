@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l1" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Social Network</title>
+    <link href="static/css/vendor/all.css" rel="stylesheet">
+    <link href="static/css/app/app.css" rel="stylesheet">
+    <script src="static/js/vendor/all.js"></script>
+    <script src="static/js/app/app.js"></script>
+</head>
+
+<body class="login">
+
+<div class="navbar navbar-main navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Social Network</a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav">
+
+
+                <!-- Sign up -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-fw fa-plus"></i> Sign Up
+                    </a>
+                    <div class="dropdown-menu dropdown-size-280">
+
+
+
+                        <form action="Register" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group form-control-default">
+                                        <label for="exampleInputFirstName">First name</label>
+                                        <input type="text" name="firstName" class="form-control" id="exampleInputFirstName"
+                                               placeholder="Your first name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group form-control-default">
+                                        <label for="exampleInputLastName">Last name</label>
+                                        <input type="text" name="lastName" class="form-control" id="exampleInputLastName"
+                                               placeholder="Your last name">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-control-default required">
+                                <label for="exampleInputEmail1">Country</label>
+                                <input type="text" name="country" class="form-control" id="exampleInputCountry"
+                                       placeholder="Enter country">
+                            </div>
+
+                            <div class="form-group form-control-default required">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Enter email">
+                            </div>
+
+                            <div class="form-group form-control-default required">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" name="password" class="form-control" id="exampleInputPassword1"
+                                       placeholder="Password">
+                            </div>
+
+                            <button type="submit" value="Register" class="btn btn-primary">Submit</button>
+                        </form>
+
+                        <p align="center">If you are registered user, please <a href="login.html">login</a>.</p>
+
+                    </div>
+                </li>
+                <!-- // END sign up -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div>
+</body>
+</html>
